@@ -3,5 +3,6 @@ document.getElementById("clickr").addEventListener("click", function(event) {
 	master=document.getElementById("master").value
 	len=document.getElementById("len").value
 
-	document.getElementById("desc").innerHTML=btoa(md5(site+"+"+master)).substring(0,len)
+	//the "+" and "\n" are there to be consistent with my pas.sh gist
+	document.getElementById("desc").innerHTML=btoa(sha512(site+"+"+master+"\n")).substring(0,len)
 }, false);
