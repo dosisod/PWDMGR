@@ -1,6 +1,5 @@
 <html>
 </head><title>PWDMGR</title>
-<script src="md5.js"></script>
 </head>
 <body>
 <br>
@@ -9,7 +8,7 @@
 <input id="site" placeholder="SITE" autocomplete=off>
 <input type="password" id="master" placeholder="MASTER KEY" autocomplete=off>
 <input id="len" value="32" autocomplete=off>
-<input type="submit" size="2" onclick="pwd()" value="GENERATE">
+<input id="clickr" type="submit" size="2" value="GENERATE">
 <style>
 * {
 	background: #ff2424;
@@ -33,14 +32,7 @@ input {
 	width: 4em;
 }
 </style>
-<script>
-function pwd() {
-	site=document.getElementById("site").value
-	master=document.getElementById("master").value
-	len=document.getElementById("len").value
-
-	document.getElementById("desc").innerHTML=btoa(md5(site+"+"+master)).substring(0,len)
-}
-</script>
+<script src="md5.js"></script>
+<script src="pwd.js"></script>
 </body>
 </html>

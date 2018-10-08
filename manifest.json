@@ -3,7 +3,7 @@
 	"name": "PWDMGR",
 	"version": "1.0",
 	"description": "Password Manager",
-	"homepage": "https://github.com/dosisod/PWDMGR",
+	"homepage_url": "https://github.com/dosisod/PWDMGR",
 	"icons": {
 		"48": "img/48new.png"
 	},
@@ -14,8 +14,5 @@
 		"default_icon": "img/32new.png",
 		"default_title": "PWDMGR",
 		"default_popup": "index.html"
-	},
-	"web_accessible_resources": [
-		"md5.js"
-	]
+	}
 }
