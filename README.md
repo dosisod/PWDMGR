@@ -3,6 +3,8 @@ Offline Firefox password manager
 
 Simple password manager that works offline
 
+![PWDMGR Add-on](img/eg.png)
+
 # Installing
 
 Download most recent build from builds folder
