@@ -13,7 +13,7 @@ As the package is unsigned, you must disable xpi checking:
 
 Goto `about:config` in the search bar
 
-Search for `xpiinstall.signature.required` and set it to false
+Search for `xpinstall.signatures.required` and set it to false
 
 Then goto `about:addons` and hit the gear next to search bar
 
