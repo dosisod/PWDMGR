@@ -1,7 +1,5 @@
-document.getElementById("clickr").onclick=()=>{
-	//document.getElementById() wrapper
-	d=(e)=>{return document.getElementById(e).value}
-	
+clickr.onclick=()=>{
+	f.style.visibility="hidden"
 	//the "+" and "\n" are there to be consistent with my pas.sh gist
-	desc.innerText=btoa(sha512(d("site")+"+"+d("master")+"\n")).substring(0,d("len"))
+	desc.innerText=btoa(sha512(site.value+"+"+master.value+"\n")).substring(0,len.value)
 }
