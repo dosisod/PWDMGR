@@ -5,7 +5,7 @@ Simple password manager that works offline
 
 ![PWDMGR Add-on](img/eg.png)
 
-# Installing (Version 2.0+)
+## Installing (Version 2.0+)
 
 Download most recent build from [builds](builds/) folder
 
@@ -15,7 +15,7 @@ Goto `about:addons` click the gear -> "Install Add-on From File" -> select `.xpi
 
 Done!
 
-# Installing OLD (Versions 1.1, 1.0)
+## Installing OLD (Versions 1.1, 1.0)
 
 Download desired build from [builds](builds/)
 
@@ -32,3 +32,9 @@ Then goto `about:addons` and hit the gear next to search bar
 click `Install Add-on From File` and select the `.xpi` file
 
 Done!
+
+## This add-on "appears to be corrupt"
+
+This error is caused by using an old version of Firefox that is known to remove add-ons
+
+Updating to the newest version of Firefox and reinstalling add-on will fix this
