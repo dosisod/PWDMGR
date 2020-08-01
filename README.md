@@ -1,40 +1,29 @@
 # PWDMGR
-Offline Firefox password manager
 
-Simple password manager that works offline
+Offline Firefox password manager.
+
+Simple password manager that works offline.
 
 ![PWDMGR Add-on](img/eg.png)
 
-## Installing (Version 2.0+)
+## Installing
 
-Download most recent build from [builds](builds/) folder
+Download most recent [release](https://github.com/dosisod/PWDMGR/releases).
 
-Verify hash against hash for your version in [builds/checksum](builds/checksum)
+Verify the file was downloaded correctly by comparing against the [checksum](builds/checksum):
 
-Goto `about:addons` click the gear -> "Install Add-on From File" -> select `.xpi` file
+```
+$ sha512sum file.xpi
+```
 
-Done!
+The hash outputted by `sha512sum` should match the hash from the checksum
 
-## Installing OLD (Versions 1.1, 1.0)
-
-Download desired build from [builds](builds/)
-
-Verify hash against hash for your version in [builds/checksum](builds/checksum)
-
-As the (older) packages are unsigned, you must disable xpi checking:
-
-Goto `about:config` in the search bar
-
-Search for `xpinstall.signatures.required` and set it to false
-
-Then goto `about:addons` and hit the gear next to search bar
-
-click `Install Add-on From File` and select the `.xpi` file
+Goto `about:addons` click the gear -> "Install Add-on From File" -> select `.xpi` file.
 
 Done!
 
-## This add-on "appears to be corrupt"
+## Fix "This add-on appears to be corrupt"
 
-This error is caused by using an old version of Firefox that is known to remove add-ons
+This error is caused by using an old version of Firefox that is known to remove add-ons.
 
-Updating to the newest version of Firefox and reinstalling add-on will fix this
+Updating to the newest version of Firefox and reinstalling add-on will fix this.

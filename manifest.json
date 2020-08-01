@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "PWDMGR",
-  "version": "2.1",
+  "version": "3.0",
   "description": "Password Manager",
   "homepage_url": "https://github.com/dosisod/PWDMGR",
   "icons": {
@@ -12,6 +12,6 @@
   "browser_action": {
     "default_icon": "img/32.png",
     "default_title": "PWDMGR",
-    "default_popup": "index.html"
+    "default_popup": "src/index.html"
   }
 }

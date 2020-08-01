@@ -1,39 +1,56 @@
 <html>
-<head><title>PWDMGR</title></head>
+<meta charset="utf-8" />
+<head>
+
+<title>PWDMGR</title>
+<script src="/src/sha512.min.js"></script>
+<script src="/src/pwd.js"></script>
+
+</head>
+
 <body>
-<br>
-<p class="title">PWDMGR</p>
-<p id="desc">Type in a login url plus your master password to get a new password</p></br>
-<form action="#" id="f">
-	<input id="site" placeholder="SITE" autocomplete=off>
-	<input type="password" id="master" placeholder="MASTER KEY" autocomplete=off>
-	<input id="len" value="32" autocomplete=off>
-	<input id="clickr" type="submit" size="2" value="GENERATE">
-</form>
+<h1>PWDMGR</h1>
+<p>Type in a login url plus your master password to get a new password</p>
+
+<form>
+  <input id="site" placeholder="SITE" autocomplete=off>
+  <input id="master" type="password" placeholder="MASTER KEY" autocomplete=off>
+  <input id="len" value="32" autocomplete=off>
+  <input value="GENERATE" type="submit">
+</div>
+
 <style>
 * {
-	background: #ff2424;
-	color: white;
-	border: none;
-	text-decoration: none;
-	text-align: center;
-	font-family: monospace;
+  background: #ff2424;
+  color: white;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  font-family: monospace;
 }
-#desc {
-	font-size: 16px;
+
+h1 {
+  margin-top: 1em;
 }
-.title {
-	font-size: 32px;
+
+p {
+  font-size: 16px;
+  margin-bottom: 1.5em;
 }
+
 input {
-	color: red;
-	background-color: white;
+  color: red;
+  background-color: white;
 }
+
 #len {
-	width: 4em;
+  width: 4em;
+}
+
+input[type=submit] {
+  border: 1px solid white;
 }
 </style>
-<script src="sha512.min.js"></script>
-<script src="pwd.js"></script>
+
 </body>
 </html>
